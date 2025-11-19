@@ -13,30 +13,46 @@ github: https://github.com/IshanGupta-Code
 🚀 Features
 
 ✔ Speech-to-text (with fallback to keyboard if mic fails)
+
 ✔ Text-to-speech with pyttsx3
+
 ✔ Tell time
+
 ✔ Wikipedia summaries
+
 ✔ Play/search songs on YouTube (browser-based, no pywhatkit)
+
 ✔ Tell jokes
+
 ✔ Memory storage & recall (jarvis_memory.txt)
+
 ✔ Open common websites
+
 ✔ Clean error handling & logging
+
 ✔ Fully functional even without PyAudio or microphone
+
 ✔ Safe from Python filename conflicts (e.g., code.py issue)
+
 
 
 📁 Project Structure
 
 JARVIS-v0.1/
 │
-├── jarvis_basic.py          # Main JARVIS script (do NOT name this code.py)
-├── requirements.txt         # Dependencies (minimal)
-├── jarvis_memory.txt        # Created automatically — stores 'remember' notes
-├── README.md                # Project documentation
+├── jarvis_basic.py          #Main JARVIS script (do NOT name this code.py)
+
+├── requirements.txt         #Dependencies (minimal)
+
+├── jarvis_memory.txt        #Created automatically — stores 'remember' notes
+
+├── README.md                #Project documentation
+
 │
-├── .venv/                   # Virtual environment (ignored by Git)
+├── .venv/                   #Virtual environment (ignored by Git)
+
 │
-└── assets/                  # Optional future folder for images/sounds/etc.
+└── assets/                  #Optional future folder for images/sounds/etc.
 
 
 🛠️ Installation Guide (Windows)
