@@ -40,6 +40,7 @@ github: https://github.com/IshanGupta-Code
 
 JARVIS-v0.1/
 │
+
 ├── jarvis_basic.py          #Main JARVIS script (do NOT name this code.py)
 
 ├── requirements.txt         #Dependencies (minimal)
