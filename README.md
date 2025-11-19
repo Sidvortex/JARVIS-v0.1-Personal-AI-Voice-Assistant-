@@ -104,16 +104,26 @@ python jarvis_basic.py
 
 🧩 Commands You Can Use
 Command	Action
+
 play <song>	Opens YouTube search results for the song
+
 time	Tells current time
+
 who is <person>	Reads 1-line Wikipedia summary
+
 joke	Tells a joke
+
 remember <something>	Saves memory
+
 what did you remember	Reads memory
+
 open google / youtube / github / stackoverflow	Opens websites
+
 stop / sleep / quit	Shuts down assistant
 
+
 If microphone isn’t available, JARVIS will automatically ask you to type commands.
+
 
 ⚠️ Troubleshooting
 1. Script Errors Involving code.py
