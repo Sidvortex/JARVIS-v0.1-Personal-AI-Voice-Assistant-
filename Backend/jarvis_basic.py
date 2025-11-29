@@ -77,7 +77,7 @@ def listen(timeout: float = 5.0, phrase_time_limit: float = 6.0) -> str:
             r.pause_threshold = 0.8
             audio = r.listen(source, timeout=timeout, phrase_time_limit=phrase_time_limit)
         try:
-            cmd = r.recognize_google(audio)
+            cmd = r.recognize_google(audio)  # type: ignore
             cmd = cmd.lower().strip()
             # optional wake-word handling
             if "jarvis" in cmd:
@@ -151,7 +151,7 @@ def wiki_lookup(subject: str):
         talk("Wikipedia lookup failed.")
         log.exception(e)
 
-# --- main loop ---
+# --- main function loop ---
 def run_jarvis():
     talk("Initializing systems... (keyboard fallback available).")
     if not _SR_AVAILABLE:

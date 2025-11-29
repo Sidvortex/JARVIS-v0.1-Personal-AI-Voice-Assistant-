@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>JARVIS — Funky UI</title>
+
+  <!-- Google font -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="app">
+    <aside class="sidebar">
+      <div class="brand">
+        <div class="logo">JV</div>
+        <div class="brand-text">
+          <div class="title">JARVIS</div>
+          <div class="subtitle">Personal AI Assistant</div>
+        </div>
+      </div>
+
+      <div class="controls">
+        <button id="micBtn" class="btn mic">
+          🎤<span class="mic-ring"></span>
+        </button>
+        <button id="sendTest" class="btn">➡️ Test</button>
+        <button id="timeBtn" class="btn">🕒 Time</button>
+        <button id="jokeBtn" class="btn">😂 Joke</button>
+        <button id="playBtn" class="btn">🎵 Play</button>
+      </div>
+
+      <div class="connection card">
+        <label class="label">Backend URL</label>
+        <input id="backendUrl" class="input" value="http://127.0.0.1:5000/api/command" />
+        <div id="connStatus" class="status">Not connected</div>
+      </div>
+
+      <div class="footer-note">
+        Creators - 
+      </div>
+    </aside>
+
+    <main class="main">
+      <header class="main-header">
+        <h1>Say hi to JARVIS</h1>
+        <p class="lead">
+          Use mic or type a command — try <code>play &lt;song&gt;</code>,
+          <code>time</code>, <code>joke</code>.
+        </p>
+      </header>
+
+
+      <section id="chat-history" class="chat-history" aria-live="polite">
+        <div class="scroll-watcher"></div>
+        <!-- messages will be appended here -->
+      </section>
+
+      <div class="composer">
+        <input id="cmdInput" class="cmd-input" placeholder="Type or speak a command..." />
+        <button id="sendBtn" class="send-btn">Send</button>
+      </div>
+
+    </main>
+  </div>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
