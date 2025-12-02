@@ -1,0 +1,11 @@
+body detection system
+    Camera layer – grabs frames from webcam.
+
+    Pose model – finds keypoints: body joints + hands + fingers (like your image).
+
+    Gesture layer – interprets those keypoints into “actions”
+        (✌️ = peace, ✋ = stop, full-body pose = pause media, etc.).
+
+    JARVIS integration – when a gesture is recognized, trigger JARVIS commands.
+
+    framework - MediaPipe Holistic, OpenPose, MoveNet.
