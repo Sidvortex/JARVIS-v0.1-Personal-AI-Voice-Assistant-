@@ -1,11 +1,108 @@
-body detection system
-    Camera layer – grabs frames from webcam.
+## **1. Body detection system**
 
-    Pose model – finds keypoints: body joints + hands + fingers (like your image).
+    **Camera layer** – grabs frames from webcam.
+    **Pose model** – finds keypoints: body joints, hands, fingers, head, spine.
+    **Gesture layer** – interprets keypoints into “actions”
+    (✌️ = peace, ✋ = stop, full-body pose = pause media, finger gesture = command).
+    **Tracking layer** – maintains smooth motion tracking even when moving fast.
+    **JARVIS integration** – converts gestures into commands (volume up, open apps, scroll).
+    **framework** – MediaPipe Holistic, OpenPose, MoveNet.
 
-    Gesture layer – interprets those keypoints into “actions”
-        (✌️ = peace, ✋ = stop, full-body pose = pause media, etc.).
 
-    JARVIS integration – when a gesture is recognized, trigger JARVIS commands.
+## **2. Emotion detection system**
 
-    framework - MediaPipe Holistic, OpenPose, MoveNet.
+    **Camera/Mic layer** – captures face or audio input.
+    **Emotion model** – classifies emotions (happy, sad, angry, fear, surprise, neutral).
+    **Analysis layer** – cleans and stabilizes emotion predictions.
+    **JARVIS integration** – adjusts responses or UI based on mood.
+    **framework** – FER, DeepFace, MediaPipe FaceMesh.
+
+
+## **3. Weather detection system**
+
+    **Location layer** – detects user location via GPS/IP.
+    **API layer** – fetches real-time weather + forecast.
+    **Analysis layer** – interprets rain alerts, storms, UV index.
+    **JARVIS integration** – displays or speaks conditions.
+    **framework** – OpenWeather API.
+
+
+## **4. QR code scanner**
+
+    **Camera layer** – scans frames for QR markers.
+    **Decode engine** – extracts encoded data.
+    **Action layer** – opens links or processes commands.
+    **JARVIS integration** – executes QR-triggered tasks.
+    **framework** – Pyzbar, OpenCV QRDetector.
+
+
+## **5. JARVIS playing tic-tac-toe**
+
+    **Game engine** – grid logic + winner detection.
+    **AI layer** – minimax algorithm for unbeatable AI.
+    **UI layer** – displays board visually.
+    **JARVIS integration** – voice-based gameplay.
+    **framework** – Minimax, Tkinter/Pygame.
+
+
+## **6. Voice-based emotion detection**
+
+    **Audio processing layer** – extracts MFCC, tone, pitch, rhythm.
+    **Emotion model** – detects mood from speech.
+    **Response layer** – modifies JARVIS personality dynamically.
+    **JARVIS integration** – reacts emotionally to your voice tone.
+    **framework** – librosa, Audio Emotion Models.
+
+
+## **7. Object detection**
+
+    **Camera layer** – captures frame stream.
+    **Detection model** – finds phones, people, laptops, books, etc.
+    **Tracking layer** – follows moving objects.
+    **JARVIS integration** – warns or acts on detected items.
+    **framework** – YOLOv8, SSD-MobileNet.
+
+
+## **8. Face recognition**
+
+    **Camera layer** – captures face frames.
+    **Embedding model** – converts faces into 128D vectors.
+    **Compare layer** – matches with known users.
+    **JARVIS integration** – access control + personalized greetings.
+    **framework** – FaceNet, DeepFace.
+
+
+## **9. Offline maps**
+
+    **Storage layer** – saves map tiles on device.
+    **Routing engine** – calculates directions offline.
+    **UI layer** – map viewer + zoom + navigation.
+    **JARVIS integration** – voice navigation commands.
+    **framework** – OpenStreetMap, Mapbox Offline.
+
+
+## **10. Data hiding in plain sight (Steganography)**
+
+    **Encode engine** – hides data inside images (LSB).
+    **Decode engine** – extracts hidden data.
+    **Security layer** – optional encryption before hiding.
+    **JARVIS integration** – secret data vault in images.
+    **framework** – LSB Steganography, OpenCV.
+
+
+## **11. Voice translator**
+
+    **Speech-to-text layer** – converts speech to text.
+    **Translation model** – converts language in real-time.
+    **Text-to-speech layer** – speaks translated output.
+    **JARVIS integration** – multilingual conversation assistant.
+    **framework** – Google Translate API, Whisper.
+
+
+## **12. Text detection system**
+
+    **Camera layer** – reads documents or screens.
+    **OCR engine** – extracts text from images.
+    **Processing layer** – cleans, straightens, and enhances text.
+    **JARVIS integration** – reads aloud, saves notes, converts to PDF.
+    **framework** – Tesseract OCR, EasyOCR.
