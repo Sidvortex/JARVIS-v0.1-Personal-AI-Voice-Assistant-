@@ -1,182 +1,302 @@
+<div align="center">
 
-👥 Developers
+# 🤖 JARVIS v0.1
 
-Siddharth Ravada
-Creator & Lead Developer
-GitHub: https://github.com/sidvortex
+### Personal AI Voice Assistant
 
-Ishan Gupta
-Collaborator
-github: https://github.com/IshanGupta-Code
+[![Python](https://img.shields.io/badge/Python-3.8+-3776AB?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![Platform](https://img.shields.io/badge/Platform-Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)](https://www.microsoft.com/windows)
+[![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)]()
 
+*A lightweight, fully functional voice assistant with speech recognition, text-to-speech, and smart command handling — works even without a microphone!*
 
-🚀 Features
+[Features](#-features) •
+[Installation](#%EF%B8%8F-installation-guide-windows) •
+[Commands](#-commands-you-can-use) •
+[Troubleshooting](#%EF%B8%8F-troubleshooting) •
+[Roadmap](#-future-roadmap)
 
-✔ Speech-to-text (with fallback to keyboard if mic fails)
+---
 
-✔ Text-to-speech with pyttsx3
+<img src="https://media.giphy.com/media/ZVik7pBtu9dNS/giphy.gif" width="200" alt="JARVIS Animation">
 
-✔ Tell time
+*"At your service."*
 
-✔ Wikipedia summaries
+</div>
 
-✔ Play/search songs on YouTube (browser-based, no pywhatkit)
+---
 
-✔ Tell jokes
+## 👥 Developers
 
-✔ Memory storage & recall (jarvis_memory.txt)
+<table>
+  <tr>
+    <td align="center">
+      <a href="https://github.com/sidvortex">
+        <img src="https://github.com/sidvortex.png" width="100px;" alt="Siddharth Ravada"/><br />
+        <sub><b>Siddharth Ravada</b></sub>
+      </a>
+      <br />
+      <sub>Creator & Lead Developer</sub>
+    </td>
+    <td align="center">
+      <a href="https://github.com/IshanGupta-Code">
+        <img src="https://github.com/IshanGupta-Code.png" width="100px;" alt="Ishan Gupta"/><br />
+        <sub><b>Ishan Gupta</b></sub>
+      </a>
+      <br />
+      <sub>Collaborator</sub>
+    </td>
+  </tr>
+</table>
 
-✔ Open common websites
+---
 
-✔ Clean error handling & logging
+## 📖 Overview
 
-✔ Fully functional even without PyAudio or microphone
+**JARVIS v0.1** is a personal AI voice assistant built in Python that can:
 
-✔ Safe from Python filename conflicts (e.g., code.py issue)
+- 🎤 Listen to voice commands (or accept typed input)
+- 🔊 Respond with natural text-to-speech
+- 🌐 Search the web, play music, and fetch information
+- 🧠 Remember things you tell it
 
+> **Note:** Works perfectly even without a microphone — automatically falls back to keyboard input!
 
+---
 
-📁 Project Structure
+## 🚀 Features
 
+| Feature | Description | Status |
+|---------|-------------|--------|
+| 🎤 **Speech-to-Text** | Voice recognition with mic fallback to keyboard | ✅ |
+| 🔊 **Text-to-Speech** | Natural responses using `pyttsx3` | ✅ |
+| ⏰ **Tell Time** | Current time on demand | ✅ |
+| 📚 **Wikipedia Summaries** | Quick information lookup | ✅ |
+| 🎵 **YouTube Playback** | Play/search songs (browser-based) | ✅ |
+| 😂 **Tell Jokes** | Random jokes for entertainment | ✅ |
+| 🧠 **Memory System** | Store & recall notes (`jarvis_memory.txt`) | ✅ |
+| 🌐 **Open Websites** | Quick access to common sites | ✅ |
+| 🛡️ **Error Handling** | Clean logging and graceful failures | ✅ |
+| ⌨️ **Keyboard Fallback** | Works without PyAudio or microphone | ✅ |
+| 🔒 **Safe Naming** | No conflicts with Python modules | ✅ |
+
+---
+
+## 🏗️ Project Structure
 JARVIS-v0.1/
 │
-
-├── jarvis_basic.py          #Main JARVIS script (do NOT name this code.py)
-
-├── requirements.txt         #Dependencies (minimal)
-
-├── jarvis_memory.txt        #Created automatically — stores 'remember' notes
-
-├── README.md                #Project documentation
-
+├── 📄 jarvis_basic.py # Main JARVIS script (⚠️ do NOT name this code.py)
+├── 📄 requirements.txt # Dependencies (minimal)
+├── 📄 jarvis_memory.txt # Auto-created — stores 'remember' notes
+├── 📄 README.md # Project documentation
 │
-├── .venv/                   #Virtual environment (ignored by Git)
-
+├── 📁 .venv/ # Virtual environment (ignored by Git)
 │
-└── assets/                  #Optional future folder for images/sounds/etc.
+└── 📁 assets/ # Optional: images, sounds, etc.
+
+text
 
 
-🛠️ Installation Guide (Windows)
+---
 
-1. Clone the Repository
-git clone https://github.com/sidvortex/JARVIS-v0.1-Personal-AI-Voice-Assistant-.git
-cd JARVIS-v0.1-Personal-AI-Voice-Assistant
+## 🛠️ Installation Guide (Windows)
 
-2. Create a Virtual Environment
-python -m venv .venv
+### Prerequisites
 
-3. Activate the Virtual Environment
-Command Prompt
-.\.venv\Scripts\activate.bat
+    - Python 3.8+ (Python 3.11 recommended for full mic support)
+    - Windows 10/11
+    - Internet connection
+
+### Step-by-Step Setup
+
+**1️⃣ Clone the Repository**
+
+
+    git clone https://github.com/sidvortex/JARVIS-v0.1-Personal-AI-Voice-Assistant-.git
+cd JARVIS-v0.1-Personal-AI-Voice-Assistant-
+2️⃣ Create a Virtual Environment
+
+
+
+    python -m venv .venv
+3️⃣ Activate the Virtual Environment
+
+Shell	Command
+Command Prompt	.venv\Scripts\activate.bat
+PowerShell	.venv\Scripts\Activate.ps1
+<details> <summary>⚠️ PowerShell Execution Policy Issue?</summary>
+If scripts are blocked, run one of these:
 
 PowerShell
 
-If scripts are blocked:
+    # Option 1: Bypass for this session
+    powershell -ExecutionPolicy Bypass -File .venv\Scripts\Activate.ps1
+    
+    # Option 2: Permanently allow local scripts
+    Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force
+</details>
+4️⃣ Install Required Packages
 
-powershell -ExecutionPolicy Bypass -File .\.venv\Scripts\Activate.ps1
+    Bash
+    
+    pip install --upgrade pip
+    pip install -r requirements.txt
+5️⃣ (Optional) Enable Microphone Support
 
+⚠️ Important: PyAudio doesn't install smoothly on Python 3.13.
+Recommended: Use Python 3.11 for full speech recognition.
 
-Or permanently allow local scripts:
+    Bash
+    
+    # For Python 3.11 users
+    pip install pipwin
+    pipwin install pyaudio
+💡 If you stay on Python 3.13, JARVIS will still work using keyboard input instead of mic.
 
-Set-ExecutionPolicy -Scope CurrentUser RemoteSigned -Force
+6️⃣ Run JARVIS
 
-4. Install Required Packages
-pip install --upgrade pip
-pip install -r requirements.txt
-
-5. (Optional) Enable Microphone Support
-
-Full mic support requires PyAudio.
-
-⚠ Note: PyAudio does not install smoothly on Python 3.13.
-Recommended → Use Python 3.11 for full speech recognition.
-
-If using Python 3.11, you can run:
-
-pip install pipwin
-pipwin install pyaudio
-
-
-If you stay on Python 3.13, the assistant will still work, but using keyboard input instead of mic.
-
-6. Run JARVIS
-python jarvis_basic.py
-
-🧩 Commands You Can Use
+    Bash
+    
+    python jarvis_basic.py
+🎯 Commands You Can Use
+Voice/Text Commands
 Command	Action
-
-play <song>	Opens YouTube search results for the song
-
-time	Tells current time
-
+play <song name>	Opens YouTube search results for the song
+time	Tells the current time
 who is <person>	Reads 1-line Wikipedia summary
-
-joke	Tells a joke
-
-remember <something>	Saves memory
-
-what did you remember	Reads memory
-
-open google / youtube / github / stackoverflow	Opens websites
-
-stop / sleep / quit	Shuts down assistant
-
-
-If microphone isn’t available, JARVIS will automatically ask you to type commands.
-
+joke	Tells a random joke
+remember <something>	Saves to memory file
+what did you remember	Reads all saved memories
+open google	Opens Google
+open youtube	Opens YouTube
+open github	Opens GitHub
+open stackoverflow	Opens Stack Overflow
+stop / sleep / quit	Shuts down the assistant
+Example Interaction
+   text
+    
+    You: "What time is it?"
+    JARVIS: "The current time is 3:45 PM"
+    
+    You: "Play Shape of You"
+    JARVIS: "Playing Shape of You on YouTube"
+    [Opens browser with YouTube search]
+    
+    You: "Remember my wifi password is secret123"
+    JARVIS: "I'll remember that."
+    
+    You: "What did you remember?"
+    JARVIS: "You asked me to remember: my wifi password is secret123"
+💡 Tip: If microphone isn't available, JARVIS will automatically prompt you to type commands!
 
 ⚠️ Troubleshooting
-1. Script Errors Involving code.py
+🔴 Script Errors Involving code.py
+Error:
 
-If you see:
+    text
+    
+    AttributeError: module 'code' has no attribute 'InteractiveConsole'
+Cause: You named your file code.py, which conflicts with Python's built-in module.
 
-AttributeError: module 'code' has no attribute 'InteractiveConsole'
+Solution:
 
+    Bash
+    
+    # 1. Rename the file
+    ren code.py jarvis_basic.py
+    
+    # 2. Remove cache
+    rmdir /s /q __pycache__
+    
+    # 3. Run again
+    python jarvis_basic.py
+🔴 PyAudio Not Found
+Error:
 
-You named your file code.py.
-→ Rename it to jarvis_basic.py.
+    text
+    
+    Could not find PyAudio; check installation
+Cause: Microphone library not installed.
 
-Then remove cache:
+Solutions:
 
-rmdir /s /q __pycache__
+Python Version	Solution
+3.11 or lower	pipwin install pyaudio
+3.13	Use keyboard fallback (works automatically)
+🔴 pipwin / js2py Bytecode Error
+Error:
 
-2. PyAudio Not Found
+    text
+    
+    RuntimeError: Your python version made changes to the bytecode
+Cause: Python 3.13 bytecode incompatibility.
 
-If you see:
+Solution: Use Python 3.11 virtual environment:
 
-Could not find PyAudio; check installation
-
-
-Microphone won’t work — use keyboard fallback OR install PyAudio (Python 3.11 recommended).
-
-3. pipwin / js2py bytecode error
-
-Happens only on Python 3.13:
-
-RuntimeError: Your python version made changes to the bytecode
-
-
-Solution → Use Python 3.11 virtual environment.
-
-🔮 Future Improvements (Roadmap)
-
-Add wake-word (“Jarvis”) hotword detection
-
-Add AI-powered natural language model (offline or API-based)
-
-Add system control features (open apps, music control, brightness, etc.)
-
-Add GUI dashboard
-
-Add custom “skills” architecture
-
-
+    Bash
+    
+    # Create venv with Python 3.11
+    py -3.11 -m venv .venv311
+    .venv311\Scripts\activate
+    pip install -r requirements.txt
+🔮 Future Roadmap
+Phase	Feature	Status
+1	Core voice assistant	✅ Complete
+2	Memory system	✅ Complete
+3	YouTube integration	✅ Complete
+4	Wake-word detection ("Jarvis")	📋 Planned
+5	AI-powered NLP (offline/API)	📋 Planned
+6	System control (apps, brightness, volume)	📋 Planned
+7	GUI Dashboard	📋 Planned
+8	Custom "skills" plugin architecture	📋 Planned
+9	Integration with Project AES (emotion detection)	📋 Planned
+🔗 Related Projects
+Project	Description	Link
+Project AES	Emotion detection system for JARVIS	GitHub
 🤝 Contributing
+Contributions are welcome! Here's how to get started:
 
-Pull requests are welcome.
-Feel free to improve features, add modules, or polish the code!
-
-
+Fork the repository
+Create a feature branch
+    Bash
+    
+    git checkout -b feature/AmazingFeature
+Commit your changes
+    Bash
+    
+    git commit -m "Add AmazingFeature"
+Push to the branch
+    Bash
+    
+    git push origin feature/AmazingFeature
+Open a Pull Request
+Ideas for Contributions
+🎤 Better speech recognition
+🧠 AI-powered responses
+🎨 GUI interface
+🔌 New command plugins
+📱 Cross-platform support
 📜 License
+This project is licensed under the MIT License — you can modify, distribute, and use freely.
 
-MIT License — you can modify, distribute, and use freely.
+text
+
+    MIT License
+    
+    Copyright (c) 2024 Siddharth Ravada
+    
+    Permission is hereby granted, free of charge, to any person obtaining a copy
+    of this software and associated documentation files (the "Software"), to deal
+    in the Software without restriction, including without limitation the rights
+    to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+    copies of the Software...
+<div align="center">
+⭐ Star this repo if you found it useful!
+Built with ❤️ by Siddharth Ravada & Ishan Gupta
+
+"I am JARVIS. At your service."
+
+Visitors
+
+</div> ```
