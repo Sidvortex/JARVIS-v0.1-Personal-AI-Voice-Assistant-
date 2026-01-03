@@ -84,16 +84,16 @@
 ---
 
 ## 🏗️ Project Structure
-JARVIS-v0.1/
-│
-├── 📄 jarvis_basic.py # Main JARVIS script (⚠️ do NOT name this code.py)
-├── 📄 requirements.txt # Dependencies (minimal)
-├── 📄 jarvis_memory.txt # Auto-created — stores 'remember' notes
-├── 📄 README.md # Project documentation
-│
-├── 📁 .venv/ # Virtual environment (ignored by Git)
-│
-└── 📁 assets/ # Optional: images, sounds, etc.
+    JARVIS-v0.1/
+    │
+    ├── 📄 jarvis_basic.py # Main JARVIS script (⚠️ do NOT name this code.py)
+    ├── 📄 requirements.txt # Dependencies (minimal)
+    ├── 📄 jarvis_memory.txt # Auto-created — stores 'remember' notes
+    ├── 📄 README.md # Project documentation
+    │
+    ├── 📁 .venv/ # Virtual environment (ignored by Git)
+    │
+    └── 📁 assets/ # Optional: images, sounds, etc.
 
 text
 
